@@ -4,8 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Narkopika</title>
+
+    <style>
+        body{
+             margin: 0;
+        }
+
+        header{
+            background-color: rgb(9, 56, 19);
+            width: auto;
+            height: 150px;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgb(243, 240, 240);
+        }
+
+        .logo{
+            padding: 30px;
+        }
+
+        .pos1{
+            display: flex;
+            align-items: center;
+            background-color: rgb(22, 61, 31);
+            padding: 40px;
+            gap: 30px;
+        }
+        .pos1 > .text1{
+            flex: 1;
+        }
+
+        .pos1 > section{
+            flex: 1;
+        }
+
+        .pos1 > .gambar1{
+             flex: 1;
+             height: 800px;
+             background-image: url("img/tmpt3.webp");
+             background-size: cover;
+             background-position: center;
+             background-repeat: no-repeat;
+             border-radius: 20px;
+        
+        }
+
+       .pos1 > .text1 {
+             padding: 5dvw;
+        }
+
+       .pos1 > .text1 > h1 {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-weight: bold;
+             color: rgb(238, 226, 156);
+        }
+
+        .pos1 > .text1 > p {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 2rem;
+             color: white;
+        }
+
+        .pos2 {
+             flex: 1;
+             background-color: rgb(21, 75, 33);
+             display: flex;
+             flex-direction: row;
+        }
+
+        .pos2 > section {
+             flex: 1;
+        }
+
+        .pos2 > .gambar2 {
+             flex: 1;
+             background-image: url("img/tmpt3.webp");
+             background-size: cover;
+             background-repeat: no-repeat;
+             border-radius: 20px 0px 0px 20px;
+        }
+
+        .pos2 > .text2 {
+             padding: 5dvw;
+        }
+
+        .pos2 > .text2 > h1 {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-weight: bold;
+             color: wheat;
+        }
+
+        .pos2 > .text2 > p {
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             font-size: 1.5rem;
+             text-align: justify;
+             color: white;
+        }
+
+        footer{
+            flex: 3;
+            background-color:  rgb(9, 56, 19);
+            display: flex;
+            flex-direction: row;
+        }
+
+        footer > section{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer >section > p{
+            color: white;
+        }
+
+        button {
+            background-color: rgb(72, 110, 67);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            font-size: 30px;
+            border-color: transparent;
+            width: 400px;
+            height: 100px;
+            margin-left: 0px;
+        }
+
+        .promo {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .harga {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .produk {
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+        }
+
+       
+
+    </style>
 </head>
+
+
 <body>
+    <main class="first">
+
+
+    <header>
+        <nav>
+            <img class="logo" src="img/narkop.png"alt="" width=" 100px">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="">Product</a>
+            <a href="">Store</a>
+            <a href="">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="pos1">
+    <section class="text1">
+        <h1>Story Of Narkopika</h1>
+        <p>
+            Narkopika Pontianak merupakan coffee shop lokal yang hadir sebagai tempat berkumpul
+            dengan suasana nyaman dan modern bagi masyarakat Kota Pontianak. Menghadirkan berbagai 
+            pilihan kopi serta menu makanan dan camilan, Narkopika menjadi salah satu destinasi
+            favorit untuk bersantai, bekerja, maupun menghabiskan waktu bersama teman dan keluarga.
+            Dengan konsep tempat yang luas serta pilihan area indoor dan outdoor, Narkopika berusaha
+            menghadirkan pengalaman nongkrong yang nyaman bagi berbagai kalangan, terutama anak muda
+            dan pecinta kopi. Lebih dari sekadar tempat menikmati minuman, Narkopika menjadi ruang
+            untuk berbagi cerita, ide, dan kebersamaan.
+        </p>
+    </section>
+    <section class="gambar1"></section>
+    </section>
+            
+    </main>
     
+    <footer>
+        <section>
+            <img src="img/narkop.png" alt="" width="100px">
+        </section>
+        <section>
+            <p>Jl. Hos Cokroaminoto No. 330</p>
+        </section>
+    </footer>
+
+    </main>
 </body>
+
 </html>
