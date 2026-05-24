@@ -166,6 +166,47 @@
             color: rgb(255, 255, 255);
         }
 
+         #modalpromo {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(28, 28, 28, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content {
+            background-color: white;
+            width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .btn-popup {
+            background-color: rgb(22, 61, 31);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+        }
 
     </style>
 
@@ -174,6 +215,29 @@
 
 
 <body>
+
+     <div id="modalpromo">
+        <div class="popup-content">
+
+            <span class="close" onclick="closePromo()">
+                &times;
+            </span>
+
+            <h2 style="color: black">
+                KHUSUS HARI INI!
+            </h2>
+
+            <p>
+                Gunakan kode <b>BLACKSERIES</b> untuk diskon 14,29%
+                pada pembelian pertama Anda.
+            </p>
+
+            <button class="btn-popup" onclick="closePromo()">
+                Ambil Diskon
+            </button>
+
+        </div>
+    </div>
 
     <main class="first">
 
@@ -196,7 +260,6 @@
         </nav>
     </header>
 
-    <main>
     <section class="pos1">
     <section class="text1">
         <h1>Narkopika</h1>
@@ -224,7 +287,6 @@
     </section>
     <section class="gambar2"></section>
     </section>
-    </main>
     
     <footer>
         <section>
@@ -237,5 +299,15 @@
 
     </main>
 </body>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("modalpromo").style.display = "flex";
+    }, 5000);
+
+    function closePromo() {
+        document.getElementById("modalpromo").style.display = "none";
+    }
+</script>
 
 </html>
