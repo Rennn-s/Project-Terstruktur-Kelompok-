@@ -7,7 +7,12 @@
 
     <style>
         body{
-             margin: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(21, 75, 33);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header{
@@ -16,16 +21,26 @@
             height: 150px;
         }
 
+        .first{
+            flex: 1;
+        }
+
         nav{
+            /* background-image: url("img/named.jpg"); */
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 10px;
         }
 
-        a{
+        nav a{
             text-decoration: none;
-            color: rgb(243, 240, 240);
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: orange;
         }
 
         .logo{
@@ -55,7 +70,7 @@
              background-position: center;
              background-repeat: no-repeat;
              border-radius: 20px;
-        
+             box-shadow: 10px 10px 10px 10px;
         }
 
        .pos1 > .text1 {
@@ -78,6 +93,8 @@
              background-color: rgb(21, 75, 33);
              display: flex;
              flex-direction: row;
+             gap: 30px;
+             padding: 40px;
         }
 
         .pos2 > section {
@@ -86,12 +103,14 @@
 
         .pos2 > .gambar2 {
              flex: 1;
-             background-image: url("img/product1.jpeg");
+             background-image: url("img/product1HD.png");
              background-size: cover;
              background-position: center;
              background-repeat: no-repeat;
              border-radius:20px;
              height: 600px;
+             /* width: 300px; */
+             box-shadow: 10px 10px 10px 10px;
         }
 
         .pos2 > .text2 {
@@ -112,21 +131,12 @@
         }
 
         footer{
-            flex: 3;
-            background-color:  rgb(9, 56, 19);
-            display: flex;
-            flex-direction: row;
-            height: 150px;
+            background-color: rgb(9, 56, 19);
+            text-align: center;
+            padding: 20px;
         }
 
-        footer > section{
-            flex: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer >section > p{
+        footer > p{
             color: white;
         }
 
@@ -161,28 +171,100 @@
             color: rgb(255, 255, 255);
         }
 
-       
+         #modalpromo {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(28, 28, 28, 0.7);
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .popup-content {
+            background-color: white;
+            width: 320px;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .btn-popup {
+            background-color: rgb(22, 61, 31);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: auto;
+            height: auto;
+            font-size: 16px;
+        }
 
     </style>
+
 </head>
 
 
+
 <body>
+
+     <div id="modalpromo">
+        <div class="popup-content">
+
+            <span class="close" onclick="closePromo()">
+                &times;
+            </span>
+
+            <h2 style="color: black">
+                KHUSUS HARI INI!
+            </h2>
+
+            <p>
+                Gunakan kode <b>BLACKSERIES</b> untuk diskon 14,67%
+                pada pembelian pertama Anda.
+            </p>
+
+            <button class="btn-popup" onclick="closePromo()">
+                Ambil Diskon
+            </button>
+
+        </div>
+    </div>
+
     <main class="first">
 
-
     <header>
+
+        <!-- <section class="searchbar">
+            <input type="text" placeholder="Search" class="searchbar">
+        </section>       (buat masuk ke menu)-->
+
+        <!-- dasdas -->
+
+
         <nav>
             <img class="logo" src="img/logonarkop.jpg"alt="" width=" 100px">
             <a href="">Home</a>
             <a href="about.html">About</a>
-            <a href="">Product</a>
-            <a href="">Store</a>
-            <a href="">Contact</a>
+            <a href="menu.html">Product</a>
+            <a href="store.html">Store</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
     <section class="pos1">
     <section class="text1">
         <h1>Narkopika</h1>
@@ -203,25 +285,31 @@
     <section class="text2">
         <h1>Narkopika</h1>
         <p>
-            "Crafting character in every roast."
+            "Crafting Character In Every Roast."
             <br></br>
             Mengolah setiap biji dengan presisi untuk menghadirkan rasa terbaik dalam setiap cangkir kopi.
         </p>
     </section>
     <section class="gambar2"></section>
     </section>
-    </main>
     
     <footer>
-        <section>
-            <img src="img/logonarkop.jpg" alt="" width="100px">
-        </section>
-        <section>
-            <p>Jl. Hos Cokroaminoto No. 330</p>
-        </section>
+    <p>
+        © Narkopika. Crafting Character In Every Roast. | Designed by Narkopika.
+    </p>
     </footer>
 
     </main>
 </body>
+
+<script>
+    setTimeout(() => {
+        document.getElementById("modalpromo").style.display = "flex";
+    }, 1000);
+
+    function closePromo() {
+        document.getElementById("modalpromo").style.display = "none";
+    }
+</script>
 
 </html>

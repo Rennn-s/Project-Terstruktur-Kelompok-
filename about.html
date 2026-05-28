@@ -7,13 +7,23 @@
 
     <style>
         body{
-             margin: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(21, 75, 33);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
 
         header{
             background-color: rgb(9, 56, 19);
             width: auto;
             height: 150px;
+        }
+
+        .first{
+            flex: 1;
         }
 
         nav{
@@ -27,9 +37,14 @@
             gap: 10px;
         }
 
-        a{
+        nav a{
             text-decoration: none;
-            color: rgb(243, 240, 240);
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: orange;
         }
 
         .logo{
@@ -59,6 +74,7 @@
              background-position: center;
              background-repeat: no-repeat;
              border-radius: 20px;
+             box-shadow: 10px 10px 10px 10px;
         
         }
 
@@ -78,59 +94,10 @@
              color: white;
         }
 
-        .pos2 {
-             flex: 1;
-             background-color: rgb(21, 75, 33);
-             display: flex;
-             flex-direction: row;
-        }
-
-        .pos2 > section {
-             flex: 1;
-        }
-
-        .pos2 > .gambar2 {
-             flex: 1;
-             background-image: url("img/tmpt3.webp");
-             background-size: cover;
-             background-repeat: no-repeat;
-             border-radius: 20px 0px 0px 20px;
-        }
-
-        .pos2 > .text2 {
-             padding: 5dvw;
-        }
-
-        .pos2 > .text2 > h1 {
-             font-family: Verdana, Geneva, Tahoma, sans-serif;
-             font-weight: bold;
-             color: wheat;
-        }
-
-        .pos2 > .text2 > p {
-             font-family: Verdana, Geneva, Tahoma, sans-serif;
-             font-size: 1.5rem;
-             text-align: justify;
-             color: white;
-        }
-
         footer{
-            flex: 3;
-            background-color:  rgb(9, 56, 19);
-            display: flex;
-            flex-direction: row;
-            height: 150px;
-        }
-
-        footer > section{
-            flex: 2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        footer >section > p{
-            color: white;
+            background-color: rgb(9, 56, 19);
+            text-align: center;
+            padding: 20px;
         }
 
         button {
@@ -164,30 +131,25 @@
             color: black;
         }
 
-       
-
+         
     </style>
 </head>
 
 
 <body>
-   
-
-    <main class="first">
-
 
     <header>
         <nav>
             <img class="logo" src="img/logonarkop.jpg"alt="" width=" 100px">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <a href="">Product</a>
-            <a href="">Store</a>
-            <a href="">Contact</a>
+            <a href="menu.html">Product</a>
+            <a href="store.html">Store</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <main>
+    <main class="first">
     <section class="pos1">
     <section class="text1">
         <h1>Story Of Narkopika</h1>
@@ -208,15 +170,11 @@
     </main>
     
     <footer>
-        <section>
-            <img src="img/logonarkop.jpg" alt="" width="100px">
-        </section>
-        <section>
-            <p>Jl. Hos Cokroaminoto No. 330</p>
-        </section>
+            <p>
+            © Narkopika. Crafting Character In Every Roast. | Designed by Narkopika.
+            </p>
     </footer>
 
-    </main>
 </body>
 
 </html>
