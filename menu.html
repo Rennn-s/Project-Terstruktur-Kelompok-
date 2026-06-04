@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
 
+<!-- <<<<<<< HEAD
 
 
     <style></style>
@@ -34,6 +35,219 @@
 
 
 
+======= -->
+
+      <style>
+
+        body{
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(21, 75, 33);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header{
+            background-color: rgb(9, 56, 19);
+            padding: 25px;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a:hover{
+            color: orange;
+        }
+
+        .logo{
+            padding-left: 20px;
+        }
+
+        main{
+            flex: 1;
+            padding: 50px;
+            background-color: rgb(21, 75, 33);
+            color: white;
+        }
+
+        .title{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .menu-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 30px;
+        }
+
+        .menu-card{
+            background-color: rgb(30, 92, 45);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            transition: 0.3s;
+        }
+
+        .menu-card:hover{
+            transform: scale(1.03);
+        }
+
+        .menu-card img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .menu-content{
+            padding: 20px;
+        }
+
+        .menu-content a{
+            margin-top: 0;
+            color: rgb(255, 232, 189);
+            text-decoration: none;
+        }
+
+        .price{
+            color: rgb(252, 252, 252);
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        footer{
+            background-color: rgb(9, 56, 19);
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- <section class="searchbar">
+            <input type="text" placeholder="Search" class="searchbar">
+        </section> -->
+
+        <nav>
+            <img class="logo" src="img/logonarkop.jpg"alt="" width=" 100px">
+            
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Product</a>
+            <a href="store.html">Store</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+
+        
+        <div class="title">
+            <h1>Our Menu</h1>
+            <!-- <p>Best Coffee and Food for You</p> -->
+        </div>
+
+        <div class="menu-container">
+
+            <!-- <div class="menu-card">
+                <img src="img/product1HD.png" alt="Minuman">
+                <div class="menu-content">
+                    <a href="/menu/KopiTubruk.html">Kopi Tubruk</a>
+                    <p>Kopi hitam dengan rasa khas dan aroma yang kuat.</p>
+                </div>
+            </div> -->
+
+            <div class="card" style="width: 20rem;">
+                <img src="img/product1HD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kopi Tubruk</h5>
+                  <p class="card-text">Kopi hitam dengan rasa khas dan aroma yang kuat.</p>
+                  <a href="/menu/KopiTubruk.html" class="btn btn-primary">Kopi Tubruk</a>
+                </div>
+              </div>
+
+            <!-- <div class="menu-card">
+                <img src="img/cpcsam.png" alt="Makanan">
+                <div class="menu-content">
+                    <a href="/menu/ChickenPopcorn.html">Chicken Popcorn</a>
+                    <p>Potongan daging ayam tanpa tulang yang diberi bumbu khas Narkopika.</p>
+                </div>
+            </div> -->
+
+            <div class="card" style="width: 20rem;">
+                <img src="img/cpcsam.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Popcorn</h5>
+                  <p class="card-text">Potongan daging ayam tanpa tulang yang diberi bumbu khas Narkopika.</p>
+                  <a href="/menu/ChickenPopcorn.html" class="btn btn-primary">Chicken Popcorn</a>
+                </div>
+              </div>
+            
+
+            <div class="menu-card">
+                <img src="img/product3HD.png" alt="Makanan">
+                <div class="menu-content">
+                    <a href="/menu/NasiGoreng.html">Nasi Goreng Kampung</a>
+                    <p>Nasi goreng khas Narkopika ala-ala kampung dengan sate ayam.</p>
+                    <!-- <p class="price">Rp 28.000</p> -->
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/montblancsam.png" alt="Minuman">
+                <div class="menu-content">
+                    <a href="/menu/MontBlanc.html">Mont Blanc</a>
+                    <p>Campuran kopi hitam dingin dilapisi krim lembut diatasnya.</p>
+                    <!-- <p class="price">Rp 33.000</p> -->
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/product4HD.png" alt="Makanan">
+                <div class="menu-content">
+                    <a href="/menu/FreshSpringRoll.html">Fresh Spring Roll</a>
+                    <p>Spring roll segar dengan isian yang lezat.</p>
+                    <!-- <p class="price">Rp 25.000</p> -->
+                </div>
+            </div>
+
+            
+
+
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>
+             © Narkopika. Crafting Character In Every Roast. | Designed by Narkopika.
+        </p>
+    </footer>
 
 </body>
 </html>
