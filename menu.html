@@ -5,6 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu</title>
 
+<!-- <<<<<<< HEAD
+
+
+    <style></style>
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+ <main>
+    
+
+ </main>
+
+ 
+<footer>
+
+</footer>
+
+
+
+
+======= -->
+
       <style>
 
         body{
@@ -46,6 +78,8 @@
         main{
             flex: 1;
             padding: 50px;
+            background-color: rgb(21, 75, 33);
+            color: white;
         }
 
         .title{
@@ -81,9 +115,10 @@
             padding: 20px;
         }
 
-        .menu-content h2{
+        .menu-content a{
             margin-top: 0;
             color: rgb(255, 232, 189);
+            text-decoration: none;
         }
 
         .price{
@@ -96,21 +131,34 @@
             background-color: rgb(9, 56, 19);
             text-align: center;
             padding: 20px;
+            color: white;
         }
 
     </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
 </head>
 
 <body>
 
     <header>
 
+        <!-- <section class="searchbar">
+            <input type="text" placeholder="Search" class="searchbar">
+        </section> -->
+
         <nav>
             <img class="logo" src="img/logonarkop.jpg"alt="" width=" 100px">
             
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
+<<<<<<< HEAD
             <a href="">Product</a>
+=======
+            <a href="menu.html">Product</a>
+>>>>>>> 5d32a8cf86c20c050f7a6df3d2974a35a5d21696
             <a href="store.html">Store</a>
             <a href="contact.html">Contact</a>
 
@@ -120,6 +168,8 @@
 
     <main>
 
+
+        
         <div class="title">
             <h1>Our Menu</h1>
             <!-- <p>Best Coffee and Food for You</p> -->
@@ -127,50 +177,71 @@
 
         <div class="menu-container">
 
-            <div class="menu-card">
+            <!-- <div class="menu-card">
                 <img src="img/product1HD.png" alt="Minuman">
                 <div class="menu-content">
-                    <h2>Kopi Tubruk</h2>
+                    <a href="/menu/KopiTubruk.html">Kopi Tubruk</a>
                     <p>Kopi hitam dengan rasa khas dan aroma yang kuat.</p>
-                    <p class="price">Rp 20.000</p>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="menu-card">
-                <img src="img/product2HD.png" alt="Makanan">
-                <div class="menu-content">
-                    <h2>Chicken Popcorn</h2>
-                    <p>Potongan daging ayam tanpa tulang yang diberi bumbu khas Narkopika.</p>
-                    <p class="price">Rp 25.000</p>
+            <div class="card" style="width: 20rem;">
+                <img src="img/product1HD.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Kopi Tubruk</h5>
+                  <p class="card-text">Kopi hitam dengan rasa khas dan aroma yang kuat.</p>
+                  <a href="/menu/KopiTubruk.html" class="btn btn-primary">Kopi Tubruk</a>
                 </div>
-            </div>
+              </div>
+
+            <!-- <div class="menu-card">
+                <img src="img/cpcsam.png" alt="Makanan">
+                <div class="menu-content">
+                    <a href="/menu/ChickenPopcorn.html">Chicken Popcorn</a>
+                    <p>Potongan daging ayam tanpa tulang yang diberi bumbu khas Narkopika.</p>
+                </div>
+            </div> -->
+
+            <div class="card" style="width: 20rem;">
+                <img src="img/cpcsam.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Chicken Popcorn</h5>
+                  <p class="card-text">Potongan daging ayam tanpa tulang yang diberi bumbu khas Narkopika.</p>
+                  <a href="/menu/ChickenPopcorn.html" class="btn btn-primary">Chicken Popcorn</a>
+                </div>
+              </div>
+            
 
             <div class="menu-card">
                 <img src="img/product3HD.png" alt="Makanan">
                 <div class="menu-content">
-                    <h2>Nasi Goreng Kampung</h2>
-                    <p>Nasi goreng khas Narkopika ala-ala kampung dengan sate.</p>
-                    <p class="price">Rp 28.000</p>
+                    <a href="/menu/NasiGoreng.html">Nasi Goreng Kampung</a>
+                    <p>Nasi goreng khas Narkopika ala-ala kampung dengan sate ayam.</p>
+                    <!-- <p class="price">Rp 28.000</p> -->
                 </div>
             </div>
 
             <div class="menu-card">
-                <img src="img/productmontblanc.jpg" alt="Minuman">
+                <img src="img/montblancsam.png" alt="Minuman">
                 <div class="menu-content">
-                    <h2>Mont Blanc</h2>
+                    <a href="/menu/MontBlanc.html">Mont Blanc</a>
                     <p>Campuran kopi hitam dingin dilapisi krim lembut diatasnya.</p>
-                    <p class="price">Rp 33.000</p>
+                    <!-- <p class="price">Rp 33.000</p> -->
                 </div>
             </div>
 
             <div class="menu-card">
                 <img src="img/product4HD.png" alt="Makanan">
                 <div class="menu-content">
-                    <h2>Fresh Spring Roll</h2>
+                    <a href="/menu/FreshSpringRoll.html">Fresh Spring Roll</a>
                     <p>Spring roll segar dengan isian yang lezat.</p>
-                    <p class="price">Rp 25.000</p>
+                    <!-- <p class="price">Rp 25.000</p> -->
                 </div>
             </div>
+
+            
+
+
 
         </div>
 
